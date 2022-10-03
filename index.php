@@ -76,4 +76,14 @@ for($i=0; $i<100; $i++) {
     }
 }
 
-var_dump($kompiuteriai);
+//var_dump($kompiuteriai);
+
+$failoSkaitytuvas1->failoVardas = "kompiuteriai.json";
+$failoSkaitytuvas1->writeJson($kompiuteriai);
+
+var_dump($failoSkaitytuvas1->readJson());
+
+//irasyti kompiuterius i faila
+
+//Turime faila klientai.json
+//irasyti nauja klienta pagal forma
